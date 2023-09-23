@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  .popup-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+  }
+  
+  :root {
+    /* fonts */
+    --font-overpass: Overpass;
+    --font-lexend: Lexend;
+  
+    /* font sizes */
+    --font-size-8xl: 27px;
+    --font-size-xl: 20px;
+    --font-size-mini: 15px;
+    --font-size-5xl: 24px;
+    --font-size-4xl: 23px;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-darkorchid: #9453e6;
+  
+    /* Border radiuses */
+    --br-base: 16px;
+    --br-7xs: 6px;
+  }
+  

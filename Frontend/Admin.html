@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="admin-page">
+      <img class="more-1-icon" alt="" src="./Assets/more 1.png" />
+
+      <div class="admin-page-child"></div>
+      <div class="admin-page-item"></div>
+      <b class="empid">EmpId</b>
+      <img class="image-1-1" alt="" src="./Assets/image (1) 1.png" />
+
+      <div class="admin-page-inner" id="rectangle2"></div>
+      <div class="rectangle-div"></div>
+      <div class="admin-page-child1" id="rectangle4"></div>
+      <img
+        class="lotus-flower-1-icon"
+        alt=""
+        src="./Assets/lotus-flower 1.png"
+      />
+
+      <div class="sahayak">Sahayak</div>
+      <div class="admin">Admin</div>
+      <div class="settings">Settings</div>
+      <div class="help">Help</div>
+      <b class="select-category">Select Category</b>
+      <div class="name">Name</div>
+      <div class="transformers-manualpdf">Transformer’s_manual.pdf</div>
+      <div class="circuit-breakers-infopdf">circuit_breaker’s_info.pdf</div>
+      <div class="reactors-documentpdf">reactor’s_document.pdf</div>
+      <div class="switch-gears-manualpdf">switch_gear’s_manual.pdf</div>
+      <div class="sept-232022">Sept 23,2022</div>
+      <div class="sept-202021">Sept 20,2021</div>
+      <div class="sept-212019">Sept 21,2019</div>
+      <div class="sept-092018">Sept 09,2018</div>
+      <div class="transformer">Transformer</div>
+      <div class="circuit">Circuit</div>
+      <div class="reactor">Reactor</div>
+      <div class="switch-gear">Switch Gear</div>
+      <div class="date">Date</div>
+      <div class="category">Category</div>
+      <b class="upload-document">Upload Document</b>
+      <img class="file-1-icon" alt="" src="./Assets/file 1.png" />
+
+      <img class="tag-2-icon" alt="" src="./Assets/tag 2.png" />
+
+      <div class="line-div"></div>
+      <img class="pdf-3-1" alt="" src="./Assets/pdf (3) 1.png" />
+
+      <img class="pdf-3-2" alt="" src="./Assets/pdf (3) 1.png" />
+
+      <img class="pdf-3-3" alt="" src="./Assets/pdf (3) 1.png" />
+
+      <img class="pdf-3-4" alt="" src="./Assets/pdf (3) 1.png" />
+
+      <img class="icon" alt="" src="./Assets/1.png" />
+
+      <img class="icon1" alt="" src="./Assets/2.png" />
+
+      <img class="vector-icon" alt="" src="./Assets/Settings.png" />
+
+      <img class="help-icon" alt="" src="./Assets/Help.png" />
+
+      <img class="settings-icon" alt="" src="./Assets/Settings.png" />
+    </div>
+
+    <div id="categoryDropDown" class="popup-overlay" style="display: none">
+      <div class="category-drop-down">
+        <div class="square-2-parent">
+          <img class="square-2-icon" alt="" src="./Assets/square 5.png" />
+
+          <img class="square-3-icon" alt="" src="./Assets/square 5.png" />
+
+          <img class="square-4-icon" alt="" src="./Assets/square 5.png" />
+
+          <img class="square-5-icon" alt="" src="./Assets/square 5.png" />
+
+          <div class="transformer1">Transformer</div>
+          <div class="circuit1">Circuit</div>
+          <div class="reactor1">Reactor</div>
+          <div class="switch-gears">Switch Gears</div>
+        </div>
+        <img class="tab-1-icon" alt="" src="./Assets/tab 1.png" />
+
+        <b class="new-category">New Category</b>
+      </div>
+    </div>
+
+    <div
+      id="uploadDocumentContainer"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="upload-document1">
+        <img
+          class="up-loading-1-icon"
+          alt=""
+          src="./Assets/up-loading 1.png"
+        />
+
+        <b class="upload-document2">Upload Document</b>
+        <div class="upload-document-child"></div>
+      </div>
+    </div>
+
+    <script>
+      var rectangle2 = document.getElementById("rectangle2");
+      if (rectangle2) {
+        rectangle2.addEventListener("click", function () {
+          var popup = document.getElementById("categoryDropDown");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var rectangle4 = document.getElementById("rectangle4");
+      if (rectangle4) {
+        rectangle4.addEventListener("click", function () {
+          var popup = document.getElementById("uploadDocumentContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      </script>
+  </body>
+</html>

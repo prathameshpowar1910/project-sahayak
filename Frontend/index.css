@@ -1,0 +1,447 @@
+.more-1-icon {
+    position: absolute;
+    top: 52px;
+    left: 1379px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+  }
+  .admin-page-child {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    /* border-radius: var(--br-base); */
+    background-color: #537ce6;
+    width: 340px;
+    height: 1024px;
+  }
+  .admin-page-item {
+    position: absolute;
+    top: 926px;
+    left: 33px;
+    border-radius: 7px;
+    background-color: #ff9292;
+    width: 45px;
+    height: 45px;
+  }
+  .empid {
+    position: absolute;
+    top: 934px;
+    left: 96px;
+    font-size: var(--font-size-4xl);
+    letter-spacing: 0.13em;
+    color: var(--color-white);
+    mix-blend-mode: normal;
+  }
+  .image-1-1 {
+    position: absolute;
+    top: 932px;
+    left: 278px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+  .admin-page-inner {
+    top: 151px;
+    left: 431px;
+    background-color: var(--color-darkorchid);
+    width: 437px;
+    height: 79px;
+  }
+  .admin-page-child1,
+  .admin-page-inner,
+  .rectangle-div {
+    position: absolute;
+    border-radius: var(--br-base);
+  }
+  .rectangle-div {
+    top: 361px;
+    left: 387px;
+    background-color: #eed8b7;
+    width: 1008px;
+    height: 633px;
+  }
+  .admin-page-child1 {
+    top: 150px;
+    left: 922px;
+    background-color: var(--color-darkorchid);
+    width: 437px;
+    height: 79px;
+  }
+  .lotus-flower-1-icon {
+    position: absolute;
+    top: 51px;
+    left: 44px;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+  }
+  .sahayak {
+    position: absolute;
+    top: 61px;
+    left: 115px;
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+  }
+  .admin,
+  .help,
+  .sahayak,
+  .settings {
+    font-family: var(--font-overpass);
+    color: var(--color-white);
+  }
+  .admin {
+    position: absolute;
+    top: 100px;
+    left: 115px;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+  }
+  .help,
+  .settings {
+    left: 117px;
+    font-size: var(--font-size-5xl);
+  }
+  .settings {
+    position: absolute;
+    top: 266px;
+    letter-spacing: 0.06em;
+  }
+  .help {
+    top: 328px;
+  }
+  .help,
+  .name,
+  .select-category {
+    position: absolute;
+    letter-spacing: 0.06em;
+  }
+  .select-category {
+    top: 176px;
+    left: 519px;
+    font-size: var(--font-size-8xl);
+    font-family: var(--font-overpass);
+    color: var(--color-white);
+  }
+  .name {
+    top: 393px;
+    left: 422px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+  }
+  .circuit-breakers-infopdf,
+  .transformers-manualpdf {
+    position: absolute;
+    top: 474px;
+    left: 457px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .circuit-breakers-infopdf {
+    top: 533px;
+  }
+  .reactors-documentpdf,
+  .sept-202021,
+  .sept-232022,
+  .switch-gears-manualpdf {
+    position: absolute;
+    top: 592px;
+    left: 457px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .sept-202021,
+  .sept-232022,
+  .switch-gears-manualpdf {
+    top: 651px;
+  }
+  .sept-202021,
+  .sept-232022 {
+    top: 474px;
+    left: 1038px;
+  }
+  .sept-202021 {
+    top: 533px;
+  }
+  .circuit,
+  .reactor,
+  .sept-092018,
+  .sept-212019,
+  .switch-gear,
+  .transformer {
+    position: absolute;
+    top: 592px;
+    left: 1038px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .circuit,
+  .reactor,
+  .sept-092018,
+  .switch-gear,
+  .transformer {
+    top: 651px;
+  }
+  .circuit,
+  .reactor,
+  .switch-gear,
+  .transformer {
+    top: 474px;
+    left: 1232px;
+  }
+  .circuit,
+  .reactor,
+  .switch-gear {
+    top: 533px;
+  }
+  .reactor,
+  .switch-gear {
+    top: 592px;
+  }
+  .switch-gear {
+    top: 651px;
+  }
+  .date {
+    top: 392px;
+    left: 1038px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+  }
+  .category,
+  .date,
+  .upload-document {
+    position: absolute;
+    letter-spacing: 0.06em;
+  }
+  .category {
+    top: 392px;
+    left: 1232px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+  }
+  .upload-document {
+    top: 176px;
+    left: 1011px;
+    font-size: var(--font-size-8xl);
+    font-family: var(--font-overpass);
+    color: var(--color-white);
+  }
+  .file-1-icon,
+  .tag-2-icon {
+    position: absolute;
+    top: 170px;
+    left: 1305px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .tag-2-icon {
+    top: 173px;
+    left: 802px;
+  }
+  .line-div {
+    position: absolute;
+    top: 434.75px;
+    left: 421.75px;
+    border-top: 0.5px solid var(--color-black);
+    box-sizing: border-box;
+    width: 943.5px;
+    height: 0.5px;
+  }
+  .icon,
+  .icon1,
+  .pdf-3-1,
+  .pdf-3-2,
+  .pdf-3-3,
+  .pdf-3-4 {
+    position: absolute;
+    top: 470px;
+    left: 422px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+  .icon,
+  .icon1,
+  .pdf-3-2,
+  .pdf-3-3,
+  .pdf-3-4 {
+    top: 529px;
+  }
+  .icon,
+  .icon1,
+  .pdf-3-3,
+  .pdf-3-4 {
+    top: 588px;
+  }
+  .icon,
+  .icon1,
+  .pdf-3-4 {
+    top: 647px;
+  }
+  .icon,
+  .icon1 {
+    top: 152px;
+    left: 434px;
+    width: 76px;
+    height: 77px;
+  }
+  .icon1 {
+    top: 151px;
+    left: 925px;
+  }
+  .vector-icon {
+    position: absolute;
+    top: 895.04px;
+    left: 28px;
+    width: 282.01px;
+    height: 2.96px;
+  }
+  .help-icon,
+  .settings-icon {
+    position: absolute;
+    top: 322px;
+    left: 55px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .settings-icon {
+    top: 263px;
+    left: 53px;
+    width: 43px;
+    height: 33px;
+  }
+  .admin-page {
+    position: relative;
+    background-color: #24252d;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    font-family: var(--font-lexend);
+  }
+  .up-loading-1-icon {
+    position: absolute;
+    top: 53px;
+    left: 198px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .upload-document2 {
+    position: absolute;
+    top: 118px;
+    left: 96px;
+    letter-spacing: 0.06em;
+  }
+  .upload-document-child {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    border-radius: 8px;
+    border: 3px dashed var(--color-black);
+    box-sizing: border-box;
+    width: 404px;
+    height: 162px;
+  }
+  .upload-document1 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-white);
+    width: 439px;
+    height: 195px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: var(--font-size-8xl);
+    color: var(--color-black);
+    font-family: var(--font-overpass);
+  }
+  .square-2-icon,
+  .square-3-icon,
+  .square-4-icon,
+  .square-5-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    object-fit: cover;
+  }
+  .square-3-icon,
+  .square-4-icon,
+  .square-5-icon {
+    top: 46px;
+  }
+  .square-4-icon,
+  .square-5-icon {
+    top: 90px;
+  }
+  .square-5-icon {
+    top: 136px;
+  }
+  .circuit1,
+  .reactor1,
+  .switch-gears,
+  .transformer1 {
+    position: absolute;
+    top: 0;
+    left: 51px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .circuit1,
+  .reactor1,
+  .switch-gears {
+    top: 43px;
+  }
+  .reactor1,
+  .switch-gears {
+    top: 84px;
+  }
+  .switch-gears {
+    top: 125px;
+  }
+  .square-2-parent,
+  .tab-1-icon {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    width: 215px;
+    height: 159px;
+  }
+  .tab-1-icon {
+    left: 393px;
+    width: 26px;
+    height: 26px;
+    object-fit: cover;
+  }
+  .new-category {
+    position: absolute;
+    top: 58px;
+    left: 325px;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    font-family: var(--font-overpass);
+  }
+  .category-drop-down {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-white);
+    width: 439px;
+    height: 195px;
+    overflow-x: auto;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    text-align: left;
+    font-size: var(--font-size-4xl);
+    color: var(--color-black);
+    font-family: var(--font-lexend);
+  }
+  

@@ -1,0 +1,39 @@
+.up-loading-1-icon {
+    position: absolute;
+    top: 53px;
+    left: 198px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .upload-document2 {
+    position: absolute;
+    top: 118px;
+    left: 96px;
+    letter-spacing: 0.06em;
+  }
+  .upload-document-child {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    border-radius: 8px;
+    border: 3px dashed var(--color-black);
+    box-sizing: border-box;
+    width: 404px;
+    height: 162px;
+  }
+  .upload-document1 {
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-white);
+    width: 439px;
+    height: 195px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: var(--font-size-8xl);
+    color: var(--color-black);
+    font-family: var(--font-overpass);
+  }
+  
