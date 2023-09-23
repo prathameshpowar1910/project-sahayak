@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-lexend: Lexend;
+    --font-inherit: inherit;
+    --font-overpass: Overpass;
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-darkslategray: #403f3f;
+    --color-palegoldenrod-100: #d0f4ba;
+    --color-black: #000;
+    --color-white: #fff;
+  
+    /* Paddings */
+    --padding-13xl: 32px;
+  
+    /* Border radiuses */
+    --br-3xs: 10px;
+    --br-base: 16px;
+  }
+  
