@@ -24,3 +24,9 @@ Intelligent chatbot to answer queries pertaining to various Maintenance Processe
 -Admin Page
 
 <img width="1075" alt="ScrnSt  308" src="https://github.com/prathameshpowar1910/team.py-sih-kjsce/assets/105188352/c5b825c2-1e30-4fc3-bcb7-3bc4e6814df6">
+
+-Client Page (Chat Bot)
+
+<img width="1066" alt="ScrnSt  312" src="https://github.com/prathameshpowar1910/team.py-sih-kjsce/assets/105188352/85299ebb-c854-4423-8379-fb3a8776ee79">
+
+
