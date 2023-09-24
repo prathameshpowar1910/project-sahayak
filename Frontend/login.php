@@ -32,7 +32,7 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
     } 
     
     else {
-        echo "Login failed. Invalid user ID or password.";
+        echo '<script>alert("Invalid Login Id or Password")</script>';
     }
 }
 
@@ -45,7 +45,7 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sahayak</title>
     <link rel="stylesheet" href="./Login.css">
 </head>
     
@@ -84,7 +84,7 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
         cursor: pointer;
         scale: 1.05;
     }
-    
+
 
 </style>
 
@@ -103,8 +103,6 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
         <div style="width: 284px; height: 33px; left: 983px; top: 556px; position: absolute; background: #595959; border-radius: 9px"></div>
         <img style="width: 24px; height: 24px; left: 988px; top: 516px; position: absolute; transform: rotate(0deg); transform-origin: 0 0" src="./Assets/profile 1.png" />
         <img style="width: 24px; height: 22px; left: 988px; top: 561px; position: absolute" src="./Assets/padlock 1.png" />
-            
-        
         
         <div style="left: 1020px; top: 451px; position: absolute; color: rgba(255, 255, 255, 0.70);  font-size: 13px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.78px; word-wrap: break-word">Start your session by signing in.</div>
         
@@ -117,7 +115,7 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
 
         <div class="lgin">
 
-            <button class="sbmt" name="save" type="submit" value="Login" style="left: 1024px; top: 630px; height: 40px; width: 125px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; border-radius: 20px; outline: none; font-size: 20px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word; padding-right: 30px; font-family: 'Overpass', sans-serif;">Login</button>
+            <button id="sbmt" class="sbmt" name="save" type="submit" value="Login" style="left: 1024px; top: 630px; height: 40px; width: 125px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; border-radius: 20px; outline: none; font-size: 20px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word; padding-right: 30px; font-family: 'Overpass', sans-serif;">Login</button>
             
             <img style="width: 19px; height: 19px; left: 1118px; top: 639px; position: absolute" src="./Assets/image (2) 1.png" />
 
@@ -153,29 +151,3 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
 </body>
 
 </html>
-
-<!-- <script>
-    function login() {
-        var user_id = document.getElementsByName("epid")[0].value;
-        var password = document.getElementsByName("pwd")[0].value;
-
-        // Send a POST request to the login.php script
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "login.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var response = xhr.responseText;
-                if (response === "Login successful") {
-                    // Redirect the user to a YouTube URL after successful login
-                    window.location.href = "google.php"; // Replace with the actual YouTube URL
-                } else {
-                    alert(response); // Display login error message
-                }
-            }
-        };
-
-        xhr.send("epid=" + user_id + "&pwd=" + password);
-    }
-</script> -->
