@@ -1,3 +1,45 @@
+<?php
+// Replace with your actual database credentials
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dpp";
+
+// Create a database connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn -> connect_error) 
+{
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if (isset($_POST['epid']) && isset($_POST['pwd'])) 
+{
+
+    $epid = $_POST['epid'];
+    $pwd = $_POST['pwd'];
+
+    // Validate the user's credentials against the database
+    $sql = "SELECT * FROM login WHERE emp_id = '$epid' AND password = '$pwd'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // User is authenticated
+        // echo "Login successful";
+        header("Location: Chatbot.html ");
+        // You can redirect the user to the chatbot app here
+    } 
+    
+    else {
+        echo "Login failed. Invalid user ID or password.";
+    }
+}
+
+    $conn->close();
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +48,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Login.css">
 </head>
+    
 
 <style>
 
@@ -35,6 +78,12 @@
         padding: 0;
     }
 
+
+    .sbmt:hover
+    {
+        cursor: pointer;
+        scale: 1.05;
+    }
     
 
 </style>
@@ -61,14 +110,14 @@
         
         <!-- Login Form  -->
 
-        <form action="Admin.html">
+        <form method="post">
 
         <input name="epid" style="left: 1022px; top: 518px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; outline: none; font-size: 17px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word" placeholder="Enter user id">
         <input name="pwd" type="password" style="left: 1022px; top: 561px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; outline: none;  font-size: 17px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word" placeholder="********">
 
         <div class="lgin">
 
-            <button name="save" type="submit" value="Login" style="left: 1024px; top: 630px; height: 40px; width: 125px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; border-radius: 20px; outline: none; font-size: 20px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word; padding-right: 30px; font-family: 'Overpass', sans-serif;">Login</button>
+            <button class="sbmt" name="save" type="submit" value="Login" style="left: 1024px; top: 630px; height: 40px; width: 125px; position: absolute; color: rgba(255, 255, 255, 0.70); background-color: #595959; border: none; border-radius: 20px; outline: none; font-size: 20px; font-family: Radio Canada; font-weight: 500; letter-spacing: 0.84px; word-wrap: break-word; padding-right: 30px; font-family: 'Overpass', sans-serif;">Login</button>
             
             <img style="width: 19px; height: 19px; left: 1118px; top: 639px; position: absolute" src="./Assets/image (2) 1.png" />
 
@@ -102,4 +151,31 @@
     </div>
 
 </body>
+
 </html>
+
+<!-- <script>
+    function login() {
+        var user_id = document.getElementsByName("epid")[0].value;
+        var password = document.getElementsByName("pwd")[0].value;
+
+        // Send a POST request to the login.php script
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "login.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = xhr.responseText;
+                if (response === "Login successful") {
+                    // Redirect the user to a YouTube URL after successful login
+                    window.location.href = "google.php"; // Replace with the actual YouTube URL
+                } else {
+                    alert(response); // Display login error message
+                }
+            }
+        };
+
+        xhr.send("epid=" + user_id + "&pwd=" + password);
+    }
+</script> -->
