@@ -27,5 +27,6 @@ Intelligent chatbot to answer queries pertaining to various Maintenance Processe
 
 -Client Page (Chat Bot)
 
-![Uploading ScrnSt  312.png…]()
+<img width="1066" alt="ScrnSt  312" src="https://github.com/prathameshpowar1910/team.py-sih-kjsce/assets/105188352/85299ebb-c854-4423-8379-fb3a8776ee79">
+
 
