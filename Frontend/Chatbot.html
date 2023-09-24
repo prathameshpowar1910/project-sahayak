@@ -103,6 +103,25 @@
           // Please sync "Chat Bot 2" to the project
         });
       }
+
+      
+      const timeLimit = 10000;
+
+      const intps = parseInt(timeLimit * (1.666667 * 10**-5))
+      console.log("Page automatically closes in " + `${intps}` + " minutes");
+      
+      function closeAndRedirect() 
+      {
+            // Close the current page
+            window.close();
+
+            // Redirect to another page (change the URL as needed)
+            window.location.href = 'login.php'; // Replace with the desired URL
+      }
+
+      // Set a timeout to trigger the closeAndRedirect function after the time limit
+      setTimeout(closeAndRedirect, timeLimit);
+
       </script>
   </body>
 </html>

@@ -24,12 +24,21 @@ if (isset($_POST['epid']) && isset($_POST['pwd']))
     $sql = "SELECT * FROM login WHERE emp_id = '$epid' AND password = '$pwd'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+    $pattern_client = "/cl+/";
+    $pattern_admin = "/ad+/";
+
+    if ($result->num_rows > 0 && preg_match($pattern_client , $pwd)) 
+    {
         // User is authenticated
         // echo "Login successful";
         header("Location: Chatbot.html ");
         // You can redirect the user to the chatbot app here
     } 
+
+    else if($result->num_rows > 0 && preg_match($pattern_admin , $pwd))
+    {
+        header("Location: Admin.html ");
+    }
     
     else {
         echo '<script>alert("Invalid Login Id or Password")</script>';
